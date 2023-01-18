@@ -1,0 +1,153 @@
+// Portfolio-filter
+
+.portfolio-filter__list {
+    display: flex;
+    justify-content: center;
+
+    & li {
+      margin-right: 8px;
+      margin-bottom: 50px;
+    }  
+
+    & button {
+      display: block;
+      padding: 6px 25px;
+      border-radius: 4px;
+      border-color: transparent;
+    }
+
+    & button {
+      color: var(--secondary-text-color);
+      background-color: var(--secondary-bg-color);
+  
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      letter-spacing: 0.03em;
+  
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms, 250ms, 250ms, 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0s, 0s, 0s, 0s;
+      transition-property: box-shadow, border-radius, color, background-color;
+  } 
+
+    & button:hover,
+    & button:focus {
+        color: var(--title-text-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    
+}
+
+// Portfolio-projects
+
+.portfolio__list {
+    // align-items: center;
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    transition-property: box-shadow;
+
+    & p {
+      font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    }
+}
+
+.portfolio__card {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  text-decoration: none;
+
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+  transition-property: box-shadow;
+
+  &:hover,
+  &:focus {
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+      box-shadow: 
+      0px 1px 1px rgba(0, 0, 0, 0.12), 
+      0px 4px 4px rgba(0, 0, 0, 0.06), 
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+}
+
+&:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+  }
+}
+
+.portfolio__title {
+  color: var(--secondary-text-color); 
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em
+}
+
+.portfolio__descr {
+  padding: 20px 24px;
+}
+
+.portfolio__thumb{
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+  width: 370px;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  margin: 0;
+  
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio__link {
+    text-decoration: none;
+    color: #757575;
+    
+  &:hover .portfolio__overlay,
+  &:focus .portfolio__overlay {
+      transform: translateY(0);
+      transition-duration: 250ms, 250ms;
+      transition-delay: 0s, 0s;
+  }
+}

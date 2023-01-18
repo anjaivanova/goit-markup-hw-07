@@ -1,0 +1,36 @@
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    font-family: inherit;
+}
+
+[href] {
+    text-decoration: none;
+}

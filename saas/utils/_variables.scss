@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --add-bg-color: #2F303A;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --title-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+
+    $time-function: cubic-bezier(0.4, 0, 0.2, 1);
+    $transition-time-main: 250ms;
+}
